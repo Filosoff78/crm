@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head lang='ru'>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
+	<title>Итоговый проект</title>
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="/css/floating-label.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bundle.css">
+    <script src='bundle.js'></script>
+</head>
+<body>
+<nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-left ps-2">
+        <a class="" href="#">
+            <div class="sphere"></div>
+        </a>
+        <div class="uk-navbar-item js-find__user ms-3">
+            <input class="uk-input uk-form-width-large" type="text" placeholder="Введите запрос">
+        </div>
+    </div>
+    <div class="uk-navbar-right px-2">
+        <div class="uk-inline">
+            <button class="uk-button uk-button-primary" type="button">Сгенерировать людей</button>
+            <div uk-drop="mode: click">
+                <div class="uk-card uk-card-body uk-card-default">
+                    <p>Введите количество людей для генерации:</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <input class="uk-input uk-form-width-small js-random-user" type="text" placeholder="кол-во">
+                        </div>
+                        <div class="col-6">
+                            <button class="uk-button uk-button-primary js-random-user" type="button">Готово</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <h1>Клиенты</h1>
+    <div class="js-render__table"></div>
+    <div class="uk-text-center pb-3">
+        <button class="uk-button add__button" type="button"><span></span>Добавить контакт</button>
+    </div>
+</div>
+<div class="js-render__popupAddEdit"></div>
+</body>
+</html>

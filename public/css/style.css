@@ -1,0 +1,262 @@
+:root {
+    --main--color: #9873FF;
+}
+
+html {
+    background-color: #E5E5E5;
+}
+
+nav {
+    box-shadow: 0px 9.03012px 27.0904px rgba(176, 190, 197, 0.32), 0px 3.38629px 5.64383px rgba(176, 190, 197, 0.32);
+}
+
+.sphere {
+    background-color: var(--main--color);
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+}
+.sphere::after {
+    content: 'skb.';
+    position: absolute;
+    top: 21%;
+    left: 23%;
+    border-radius: 50%;
+}
+
+tbody {
+    background-color: white;
+}
+
+th[data-sort]::after {
+    color: var(--main--color);
+    margin-left: 5px;
+}
+
+[data-sort="asc"][data-sort-type="name"]::after {
+    content: '↑ А-Я';
+    color: var(--main--color);
+    margin-left: 5px;
+}
+
+[data-sort="desc"][data-sort-type="name"]::after {
+    content: '↓ А-Я';
+    color: var(--main--color);
+    margin-left: 5px;
+}
+
+
+th[data-sort="asc"]::after {
+    content: '↑';
+}
+
+th[data-sort="desc"]::after {
+    content: '↓';
+}
+
+.uk-table th {
+    text-transform: none;
+}
+
+td > span.time {
+    color: #B0B0B0;
+}
+
+i.fa {
+    color: var(--main--color);
+}
+
+td > i.fa {
+    padding-right: 5px;
+    color: var(--main--color);
+}
+
+span.table-edit__contact {
+    cursor: pointer;
+}
+
+span.table-delete__contact {
+    cursor: pointer;
+}
+
+span.table-edit__contact:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f040";
+    color: var(--main--color);
+    padding-right: 4px;
+}
+
+span.table-delete__contact:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1f8";
+    color: #F06A4D;
+    padding-right: 4px;
+}
+
+.add__button > span {
+    content: url(./svg/adduser.svg);
+    padding-right: 8px;
+}
+
+.add__button {
+    position: relative;
+    border: 1px solid var(--main--color);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--main--color);
+    text-transform: none;
+}
+
+/*Стили для popup*/
+
+.contact__button {
+    background-color: #E7E5EB;
+}
+
+.contact__button > span.uk-icon {
+    color: var(--main--color);
+}
+
+.save__button {
+    background-color: var(--main--color);
+    color: white;
+}
+
+.uk-modal-title > span {
+    color: #B0B0B0;
+    font-size: 15px;
+}
+
+p.error__text {
+    color: #F06A4D;
+}
+
+p.contact__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: black;
+    position: relative;
+    margin: 0;
+}
+
+input.did-floating-input.required ~ label::after {
+    content: '*';
+    color: var(--main--color);
+}
+
+p.contact__text::before {
+    content: url(./svg/addcontact.svg);
+    position: absolute;
+    top: 0.15em;
+    right: 8.7em;
+}
+
+p.underline__text {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input.uk-input.uk-form-width-large.contact::after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1f8";
+    padding-right: 4px;
+}
+
+div.input-icon__delete {
+    position: relative;
+}
+
+div.input-icon__delete > i{
+    position: absolute;
+    top: 0.75em;
+    right: 0.5em;
+}
+
+div.input-icon__delete > input:invalid + i {
+    display: none;
+}
+
+p.contact__text, .fa-trash-o, .fa-minus-square-o, th[data-sort-type] {
+    cursor: pointer;
+}
+
+.fa-minus-square-o {
+    color: #F06A4D !important;
+}
+
+.contact__add__div > .row > div.col-4 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.select-css {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em; width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #e5e5e5;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+.did-floating-label-content > .error__text, .error__text_contact {
+    margin-top: 0;
+    font-size: 13px;
+}
+
+input.is-invalid {
+    border: 1px solid #F06A4D;
+}
+
+/*Стили для поиска*/
+
+div.js-find__user {
+    position: relative;
+}
+
+div.js-find__user > ul {
+    position: absolute;
+    top: 4.75em;
+    background-color: white;
+    min-width: 100%;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+div.js-find__user > ul > li {
+    list-style-type: none;
+    padding: 8px 8px;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+div.js-find__user > ul > li:hover {
+    border-color: #1e87f0;
+}
+
+.uk-navbar-item {
+    padding: 0;
+}
+
+tr.active__find {
+    border: 1px solid #1e87f0;
+    border-top: 1px solid #1e87f0 !important;
+}
